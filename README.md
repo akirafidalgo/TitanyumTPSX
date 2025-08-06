@@ -1,25 +1,29 @@
-# TitanyumTPSX
+# TitanyumTPSX 🧪
 
-**TitanyumTPSX**, Minecraft sunucularının anlık durumunu takip eden ve bu bilgileri sürekli güncelleyerek belirli bir Discord kanalında paylaşan Python tabanlı bir Discord botudur.
+**TitanyumTPSX** is a Discord bot that monitors the live status of a Minecraft Java server and posts updates to a selected Discord channel every 120 seconds. It shows whether the server is online or offline, the number of active players, latency, and launcher access status (Domestic & Foreign). Launcher statuses can be changed in real-time with simple Discord commands.
 
-## 🔧 Özellikler
+---
 
-- 🎮 Minecraft sunucusunun çevrimiçi/çevrimdışı durumunu, ping'ini ve oyuncu sayısını kontrol eder.
-- 🔁 Her **120 saniyede bir** sunucuyu otomatik olarak kontrol eder.
-- 📝 Bilgileri bir **Discord mesajı** olarak gönderir ve daha sonra bu mesajı **düzenleyerek günceller**.
-- 💬 Bilgiler sabit bir mesajda sürekli güncellenerek paylaşılır (spam yapmaz).
-- ⚙️ 24/7 çalışmaya uygundur (örneğin Replit, UptimeRobot, kendi sunucunuzda çalıştırılabilir).
+## ✨ Features
 
-## 🐍 Gereksinimler
+- 🔄 **Automatic Server Status Updates** (every 2 minutes)
+- 🟢 **Displays Online Status, Player Count, and Ping**
+- 🌍 **Launcher Access Control** (`Yurt İçi` & `Yurt Dışı`)
+- ⚙️ **Editable via Discord Commands**
+- 📡 **Non-blocking & Async for high performance**
 
-- Python 3.8 veya üzeri
-- `discord.py` kütüphanesi
-- `mcstatus` kütüphanesi
+---
 
-## 💾 Kurulum
+## 🛠️ Setup Instructions
 
-### 1. Depoyu Klonlayın
+### 1. Requirements
+
+- Python 3.8+
+- Discord bot token
+- A Discord server & channel to post updates
+- Minecraft Java server (e.g. `oyna.lapexnw.com:25565`)
+
+### 2. Install Dependencies
 
 ```bash
-git clone https://github.com/kullaniciAdi/TitanyumTPSX.git
-cd TitanyumTPSX
+pip install -r requirements.txt
